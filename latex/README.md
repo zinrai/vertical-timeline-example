@@ -6,23 +6,18 @@ This LaTeX project provides a template for generating a vertical timeline using 
 
 - Easily customizable vertical timeline
 - Display of year-event pairs
-- Japanese language support (using IPAPMincho font)
 
 ## Requirements
 
 - LaTeX environment (e.g., TeXLive)
-- XeLaTeX (for Japanese support)
 - TikZ package
-- geometry package
-- xeCJK package
-- IPAPMincho font
 
 ## Installation
 
 example for Debia GNU/Linux.
 
 ```bash
-# apt install texlive-pictures texlive-xetex
+# apt install texlive-pictures
 ```
 
 ## Usage
@@ -41,21 +36,10 @@ example for Debia GNU/Linux.
    ```
    - `height`: Overall height of the timeline
 
-3. Compile using XeLaTeX:
+3. Compile using upLaTeX:
    ```
-   xelatex your_file_name.tex
+   uplatex your_file_name.tex
    ```
-
-## Customization
-
-- To change font sizes or styles, edit the `\documentclass` options or the style definitions within the `tikzpicture` environment.
-- To adjust page margins, modify the options of the `geometry` package.
-- To change the Japanese font, edit the `\setCJKmainfont` command.
-
-## Notes
-
-- Use XeLaTeX to compile for proper display of Japanese text.
-- Ensure that the IPAPMincho font is installed on your system.
 
 ## License
 
